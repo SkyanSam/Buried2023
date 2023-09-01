@@ -57,3 +57,4 @@ shape = SubResource( 1 )
 offset = Vector2( 1920, 1080 )
 current = true
 zoom = Vector2( 2, 2 )
+script = ExtResource( 8 )
