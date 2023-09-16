@@ -22,13 +22,13 @@ texture = ExtResource( 2 )
 position = Vector2( 1920, 1080 )
 texture = ExtResource( 1 )
 
-[node name="Ground(goesBehindActualGound)" type="Sprite" parent="."]
-position = Vector2( 1920, 1080 )
-texture = ExtResource( 4 )
-
 [node name="ActualGroundHitbox(invisLater)" type="Sprite" parent="."]
 position = Vector2( 1920, 1080 )
 texture = ExtResource( 5 )
+
+[node name="Ground(goesBehindActualGound)" type="Sprite" parent="."]
+position = Vector2( 1920, 1080 )
+texture = ExtResource( 4 )
 
 [node name="PlayerRef" type="Sprite" parent="."]
 position = Vector2( 1920, 1080 )
