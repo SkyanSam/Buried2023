@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/foreground.png-a2bbba4d344b4e55e6d14761c5da6a5b.stex"
+path="res://.import/rock7.png-9ba6d80f7b117878fdd25c482665d3be.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/depression/foreground.png"
-dest_files=[ "res://.import/foreground.png-a2bbba4d344b4e55e6d14761c5da6a5b.stex" ]
+source_file="res://Assets/depression/stalactite/rock7.png"
+dest_files=[ "res://.import/rock7.png-9ba6d80f7b117878fdd25c482665d3be.stex" ]
 
 [params]
 
