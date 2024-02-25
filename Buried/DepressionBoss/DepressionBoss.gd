@@ -9,6 +9,7 @@ export var total_number_of_chains = 0
 var current_number_of_chains = 0
 var current_chains : Array
 
+# Check through all the chains to see if all of them reached the ground.
 func is_chains_on_ground():
 	var chains_on_ground = true
 	for chain in current_chains:

@@ -13,9 +13,7 @@ func _enter_tree():
 	points[1] = chain_origin
 	# Getting the position we want the chain to end at
 	var chain_target_node = get_node(chain_target_path) as Node2D
-	print(chain_target_path)
-	print(chain_target_node)
-	chain_end_pos = chain_target_node.global_position
+	chain_end_pos = get_end_position(chain_target_node.global_position)
 
 func _process(delta):
 	# Seeing if we need to eject the chain or retract the chain from the end position
@@ -26,9 +24,27 @@ func _process(delta):
 		chain_target = chain_origin
 	points[0] = points[0].move_toward(chain_target, delta * chain_speed)
 	$ChainEnd.position = points[0] # check if it needs to be global
-	$RayCast2D.position = points[1]
-	$RayCast2D.cast_to = points[0]
 
 # Determines if the chain reached the ground.
 func has_reached_ground():
 	return points[0] == chain_end_pos
+
+func get_end_position(chain_target_position : Vector2):
+	# Getting Direction from Ray to Player
+	var dir : Vector2 = chain_target_position - chain_origin
+	dir = dir.normalized()
+	dir *= 100000
+	
+	# Initializing Ray
+	$RayCast2D.position = chain_origin
+	$RayCast2D.cast_to = dir
+	
+	# Forcing the ray to update
+	$RayCast2D.force_update_transform()
+	$RayCast2D.force_raycast_update()
+	
+	# Why isnt it colliding?
+	# Search some tutorials or something
+	if $RayCast2D.is_colliding():
+		return $RayCast2D.get_collision_point()
+	return chain_target_position
