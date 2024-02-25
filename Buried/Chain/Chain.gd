@@ -1,6 +1,6 @@
 extends Line2D
 
-var chain_speed = 500;
+export var chain_speed = 500;
 var chain_origin : Vector2 = Vector2(0,0)
 export var chain_target_path : NodePath
 var chain_end_pos : Vector2
@@ -28,3 +28,7 @@ func _process(delta):
 	$ChainEnd.position = points[0] # check if it needs to be global
 	$RayCast2D.position = points[1]
 	$RayCast2D.cast_to = points[0]
+
+# Determines if the chain reached the ground.
+func has_reached_ground():
+	return points[0] == chain_end_pos
