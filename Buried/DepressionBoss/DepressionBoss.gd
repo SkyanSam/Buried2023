@@ -31,7 +31,7 @@ func _on_Timer_timeout():
 	elif is_chains_on_ground():
 		# Return all chains once the max # of chains is reached
 		for chain in current_chains:
-			chain.chain_mode = Chain.ChainMode.Returning
+			chain.chain_mode = Chain.ChainMode.Parrying
 			# Note need to free chains here or in Chain.gd
 		current_chains.clear()
 		current_number_of_chains = 0
