@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Buried"
-run/main_scene="res://DepressionBoss.tscn"
+run/main_scene="res://CharacterNode.tscn"
 config/icon="res://icon.png"
 
 [autoload]
