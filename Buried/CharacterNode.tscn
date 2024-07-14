@@ -1,107 +1,105 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=19 format=3 uid="uid://5txdya3b854g"]
 
-[ext_resource path="res://Assets/depression/background 1.png" type="Texture2D" id=1]
-[ext_resource path="res://Assets/depression/background 2.png" type="Texture2D" id=2]
-[ext_resource path="res://Assets/depression/stalactite/rock2.png" type="Texture2D" id=3]
-[ext_resource path="res://Assets/depression/ground (goes behind actual gound).png" type="Texture2D" id=4]
-[ext_resource path="res://Assets/depression/actual ground hitbox (invis later).png" type="Texture2D" id=5]
-[ext_resource path="res://Player.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Assets/depression/depression.png" type="Texture2D" id=8]
-[ext_resource path="res://Assets/depression/dep foreground.png" type="Texture2D" id=9]
-[ext_resource path="res://Assets/depression/stalactite/rock1.png" type="Texture2D" id=10]
-[ext_resource path="res://Assets/depression/stalactite/rock6.png" type="Texture2D" id=11]
-[ext_resource path="res://Assets/depression/stalactite/rock3.png" type="Texture2D" id=12]
-[ext_resource path="res://Assets/depression/stalactite/rock8.png" type="Texture2D" id=13]
-[ext_resource path="res://Assets/depression/stalactite/rock10.png" type="Texture2D" id=14]
-[ext_resource path="res://Assets/depression/stalactite/rock7.png" type="Texture2D" id=15]
-[ext_resource path="res://Assets/depression/stalactite/rock9.png" type="Texture2D" id=16]
-[ext_resource path="res://Assets/depression/stalactite/rock5.png" type="Texture2D" id=17]
-[ext_resource path="res://Assets/depression/stalactite/rock4.png" type="Texture2D" id=18]
+[ext_resource type="Texture2D" uid="uid://b15lvh0bc48ih" path="res://Assets/depression/background 1.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://oy40w73mm4ei" path="res://Assets/depression/background 2.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://03b5rd3icpct" path="res://Assets/depression/stalactite/rock2.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cf1wceqjsshd6" path="res://Assets/depression/ground (goes behind actual gound).png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dyroupx5scc17" path="res://Assets/depression/actual ground hitbox (invis later).png" id="5"]
+[ext_resource type="PackedScene" path="res://Player.tscn" id="6"]
+[ext_resource type="Texture2D" uid="uid://ctxwq2brxf1ag" path="res://Assets/depression/depression.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dmodkdn4mqsj" path="res://Assets/depression/dep foreground.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://ied6ijia2uht" path="res://Assets/depression/stalactite/rock1.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://cv1vhfo2afepn" path="res://Assets/depression/stalactite/rock6.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://cyb2ko25cv33g" path="res://Assets/depression/stalactite/rock3.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://dbf7g4aqlae0l" path="res://Assets/depression/stalactite/rock8.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://c5xs45j1246e8" path="res://Assets/depression/stalactite/rock10.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://beif48pky7hc" path="res://Assets/depression/stalactite/rock7.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://dwo3ujcduu3la" path="res://Assets/depression/stalactite/rock9.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://cdt1kwbufvhw6" path="res://Assets/depression/stalactite/rock5.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://cw4wo33hgtbwv" path="res://Assets/depression/stalactite/rock4.png" id="18"]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 2002.25, 98 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(4004.5, 196)
 
 [node name="DepressionBoss" type="Node2D"]
 
 [node name="Background2" type="Sprite2D" parent="."]
-position = Vector2( 1920, 1080 )
-texture = ExtResource( 2 )
+position = Vector2(1920, 1080)
+texture = ExtResource("2")
 
 [node name="Background1" type="Sprite2D" parent="."]
-position = Vector2( 1920, 1080 )
-texture = ExtResource( 1 )
+position = Vector2(1920, 1080)
+texture = ExtResource("1")
 
 [node name="ActualGroundHitbox(invisLater)" type="Sprite2D" parent="."]
 visible = false
-position = Vector2( 1920, 1080 )
-texture = ExtResource( 5 )
+position = Vector2(1920, 1080)
+texture = ExtResource("5")
 
 [node name="Ground(goesBehindActualGound)" type="Sprite2D" parent="."]
-position = Vector2( 1920, 1080 )
-texture = ExtResource( 4 )
+position = Vector2(1920, 1080)
+texture = ExtResource("4")
 
-[node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( 714, 1569 )
+[node name="Player" parent="." instance=ExtResource("6")]
+position = Vector2(714, 1569)
 gravity = 6000
 falling_gravity = 7750
 
 [node name="Depression" type="Sprite2D" parent="."]
-position = Vector2( 3261, 1307 )
-scale = Vector2( 2, 2 )
-texture = ExtResource( 8 )
+position = Vector2(3261, 1307)
+scale = Vector2(2, 2)
+texture = ExtResource("8")
 
 [node name="Foreground" type="Sprite2D" parent="."]
-position = Vector2( 1920, 1080 )
-texture = ExtResource( 9 )
+position = Vector2(1920, 1080)
+texture = ExtResource("9")
 
 [node name="stalactite1" type="Sprite2D" parent="Foreground"]
-position = Vector2( -1040, -1051 )
-texture = ExtResource( 10 )
+position = Vector2(-1040, -1051)
+texture = ExtResource("10")
 
 [node name="stalactite2" type="Sprite2D" parent="Foreground"]
-position = Vector2( -289, -1018 )
-texture = ExtResource( 3 )
+position = Vector2(-289, -1018)
+texture = ExtResource("3")
 
 [node name="stalactite3" type="Sprite2D" parent="Foreground"]
-position = Vector2( 264, -985 )
-texture = ExtResource( 12 )
+position = Vector2(264, -985)
+texture = ExtResource("12")
 
 [node name="stalactite4" type="Sprite2D" parent="Foreground"]
-position = Vector2( 130, -1013 )
-texture = ExtResource( 18 )
+position = Vector2(130, -1013)
+texture = ExtResource("18")
 
 [node name="stalactite5" type="Sprite2D" parent="Foreground"]
-position = Vector2( -1830, -951 )
-texture = ExtResource( 17 )
+position = Vector2(-1830, -951)
+texture = ExtResource("17")
 
 [node name="stalactite6" type="Sprite2D" parent="Foreground"]
-position = Vector2( -1677, -865 )
-texture = ExtResource( 11 )
+position = Vector2(-1677, -865)
+texture = ExtResource("11")
 
 [node name="stalactite7" type="Sprite2D" parent="Foreground"]
-position = Vector2( -165, -951 )
-texture = ExtResource( 15 )
+position = Vector2(-165, -951)
+texture = ExtResource("15")
 
 [node name="stalactite8" type="Sprite2D" parent="Foreground"]
-position = Vector2( -1269, -980 )
-texture = ExtResource( 13 )
+position = Vector2(-1269, -980)
+texture = ExtResource("13")
 
 [node name="stalactite9" type="Sprite2D" parent="Foreground"]
-position = Vector2( -1107, -909 )
-texture = ExtResource( 16 )
+position = Vector2(-1107, -909)
+texture = ExtResource("16")
 
 [node name="stalactite10" type="Sprite2D" parent="Foreground"]
-position = Vector2( -445, -856 )
-texture = ExtResource( 14 )
+position = Vector2(-445, -856)
+texture = ExtResource("14")
 
 [node name="GroundArea2D" type="StaticBody2D" parent="."]
 
 [node name="GroundCollisionShape" type="CollisionShape2D" parent="GroundArea2D"]
-position = Vector2( 1915.75, 2104 )
-shape = SubResource( 1 )
+position = Vector2(1915.75, 2104)
+shape = SubResource("1")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-offset = Vector2( 1920, 1080 )
-current = true
-zoom = Vector2( 2, 2 )
-script = ExtResource( 8 )
+offset = Vector2(1920, 1080)
+zoom = Vector2(2, 2)
