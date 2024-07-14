@@ -1,7 +1,7 @@
 extends Camera2D
 
 
-onready var screen_size = Vector2(ProjectSettings.get_setting("display/window/size/width"), ProjectSettings.get_setting("display/window/size/height"))
+@onready var screen_size = Vector2(ProjectSettings.get_setting("display/window/size/viewport_width"), ProjectSettings.get_setting("display/window/size/viewport_height"))
 
 func _ready():
 	var canvas_transform = get_viewport().get_canvas_transform()
