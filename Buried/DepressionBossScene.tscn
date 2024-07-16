@@ -1,66 +1,67 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=11 format=3 uid="uid://cfu6u4sca8u2h"]
 
-[ext_resource path="res://Assets/depression/dep foreground.png" type="Texture2D" id=1]
-[ext_resource path="res://Assets/depression/player.png" type="Texture2D" id=2]
-[ext_resource path="res://Assets/depression/ground (goes behind actual gound).png" type="Texture2D" id=3]
-[ext_resource path="res://Assets/depression/background 1.png" type="Texture2D" id=4]
-[ext_resource path="res://Assets/depression/actual ground hitbox (invis later).png" type="Texture2D" id=5]
-[ext_resource path="res://Assets/depression/background 2.png" type="Texture2D" id=6]
-[ext_resource path="res://Assets/depression/depression.png" type="Texture2D" id=7]
-[ext_resource path="res://DepressionBoss/DepressionBoss.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Player.tscn" type="PackedScene" id=9]
+[ext_resource type="Texture2D" uid="uid://dmodkdn4mqsj" path="res://Assets/depression/dep foreground.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bojsuje5mpu4f" path="res://Assets/depression/player.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cf1wceqjsshd6" path="res://Assets/depression/ground (goes behind actual gound).png" id="3"]
+[ext_resource type="Texture2D" uid="uid://b15lvh0bc48ih" path="res://Assets/depression/background 1.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dyroupx5scc17" path="res://Assets/depression/actual ground hitbox (invis later).png" id="5"]
+[ext_resource type="Texture2D" uid="uid://oy40w73mm4ei" path="res://Assets/depression/background 2.png" id="6"]
+[ext_resource type="PackedScene" path="res://DepressionBoss/DepressionBoss.tscn" id="8"]
+[ext_resource type="PackedScene" uid="uid://ca2ykcunaccsm" path="res://Stalactite/StalactiteSpawner.tscn" id="8_nyn5b"]
+[ext_resource type="PackedScene" path="res://Player.tscn" id="9"]
 
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 2002.25, 98 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(4004.5, 196)
 
 [node name="DepressionBossScene" type="Node2D"]
 
 [node name="Background2" type="Sprite2D" parent="."]
-position = Vector2( 1920, 1080 )
-texture = ExtResource( 6 )
+position = Vector2(1920, 1080)
+texture = ExtResource("6")
 
 [node name="Background1" type="Sprite2D" parent="."]
-position = Vector2( 1920, 1080 )
-texture = ExtResource( 4 )
+position = Vector2(1920, 1080)
+texture = ExtResource("4")
 
 [node name="Ground(goesBehindActualGound)" type="Sprite2D" parent="."]
-position = Vector2( 1920, 1080 )
-texture = ExtResource( 3 )
+position = Vector2(1920, 1080)
+texture = ExtResource("3")
 
-[node name="DepressionBoss" parent="." instance=ExtResource( 8 )]
-position = Vector2( 3292, 1413 )
+[node name="DepressionBoss" parent="." instance=ExtResource("8")]
+position = Vector2(3292, 1413)
 chain_target_path = NodePath("../Player")
 total_number_of_chains = 4
 
 [node name="ActualGroundHitbox(invisLater)" type="Sprite2D" parent="."]
 visible = false
-position = Vector2( 1920, 1080 )
-texture = ExtResource( 5 )
+position = Vector2(1920, 1080)
+texture = ExtResource("5")
 
 [node name="PlayerRef" type="Sprite2D" parent="."]
-position = Vector2( 1920, 1080 )
-texture = ExtResource( 2 )
+position = Vector2(1920, 1080)
+texture = ExtResource("2")
 
-[node name="Player" parent="." instance=ExtResource( 9 )]
+[node name="Player" parent="." instance=ExtResource("9")]
 collision_mask = 2
 gravity = 6000
 falling_gravity = 7750
 
 [node name="Foreground" type="Sprite2D" parent="."]
-position = Vector2( 1920, 1080 )
-texture = ExtResource( 1 )
+position = Vector2(1920, 1080)
+texture = ExtResource("1")
 
 [node name="GroundArea2D" type="StaticBody2D" parent="."]
 collision_layer = 2
 collision_mask = 2
 
 [node name="GroundCollisionShape" type="CollisionShape2D" parent="GroundArea2D"]
-position = Vector2( 1915.75, 2104 )
-shape = SubResource( 1 )
+position = Vector2(1915.75, 2104)
+shape = SubResource("1")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-offset = Vector2( 1920, 1080 )
-current = true
-zoom = Vector2( 2, 2 )
-script = ExtResource( 7 )
+offset = Vector2(1920, 1080)
+zoom = Vector2(0.5, 0.5)
+
+[node name="StalactiteSpawner" parent="." instance=ExtResource("8_nyn5b")]
+falling_stalactite_interval = 2.0
+stalactite_num = 15

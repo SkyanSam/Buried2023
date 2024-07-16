@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ca2ykcunaccsm"]
+
+[ext_resource type="Script" path="res://Stalactite/StalactiteSpawner.gd" id="1_ujxb8"]
+[ext_resource type="PackedScene" uid="uid://0w7erbcph480" path="res://Stalactite/Stalactite.tscn" id="2_8n8k8"]
+
+[node name="StalactiteSpawner" type="Node2D"]
+script = ExtResource("1_ujxb8")
+stalactite_prefab = ExtResource("2_8n8k8")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

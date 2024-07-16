@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://0w7erbcph480"]
+
+[ext_resource type="Texture2D" uid="uid://c5xs45j1246e8" path="res://Assets/depression/stalactite/rock10.png" id="1_00fph"]
+[ext_resource type="Script" path="res://Stalactite/Stalactite.gd" id="1_dncjm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_80wij"]
+size = Vector2(154, 935)
+
+[sub_resource type="Curve" id="Curve_1anux"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="Stalactite" type="Area2D"]
+script = ExtResource("1_dncjm")
+terminal_speed = 2000
+terminal_speed_time = 0.7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 19.5)
+shape = SubResource("RectangleShape2D_80wij")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_00fph")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+visible = false
+emitting = false
+amount = 100
+lifetime = 0.6
+one_shot = true
+explosiveness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(30, 400)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 100.0
+initial_velocity_max = 500.0
+scale_amount_min = 10.0
+scale_amount_max = 20.0
+scale_amount_curve = SubResource("Curve_1anux")
+color = Color(0.337255, 0.341176, 0.501961, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

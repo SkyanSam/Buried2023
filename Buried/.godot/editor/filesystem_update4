@@ -1,4 +1,7 @@
 res://default_env.tres
+res://Stalactite/Stalactite.tscn
+res://Stalactite/StalactiteSpawner.gd
+res://DepressionBossScene.tscn
+res://Stalactite/StalactiteSpawner.tscn
+res://Stalactite/Stalactite.gd
 res://CharacterNode.tscn
-res://Player.gd
-res://Enemy.gd
