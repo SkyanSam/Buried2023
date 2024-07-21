@@ -1,6 +1,6 @@
 extends Node2D
 
-const Chain = preload("res://Chain/Chain.gd")
+const Chain = preload("res://Scripts/Chain/Chain.gd")
 
 @export var chain_prefab : PackedScene
 @export var chain_target_path : NodePath
