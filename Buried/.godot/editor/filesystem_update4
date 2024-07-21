@@ -1,4 +1,8 @@
 res://default_env.tres
+res://Player.tscn
+res://Scripts/States/State.gd
 res://CharacterNode.tscn
-res://Player.gd
-res://Enemy.gd
+res://DepressionBossScene.tscn
+res://DepressionBoss/DepressionBoss DONT USE.tscn
+res://DepressionBoss/DepressionBossScene.tscn
+res://Scripts/DepCam.gd
