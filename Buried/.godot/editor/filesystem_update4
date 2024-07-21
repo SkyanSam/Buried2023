@@ -1,0 +1,4 @@
+res://default_env.tres
+res://CharacterNode.tscn
+res://Player.gd
+res://Enemy.gd

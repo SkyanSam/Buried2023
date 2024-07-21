@@ -2,10 +2,10 @@ extends Node2D
 
 const Chain = preload("res://Chain/Chain.gd")
 
-export var chain_prefab : PackedScene
-export var chain_target_path : NodePath
+@export var chain_prefab : PackedScene
+@export var chain_target_path : NodePath
 
-export var total_number_of_chains = 0
+@export var total_number_of_chains = 0
 var current_number_of_chains = 0
 var current_chains : Array
 
@@ -20,7 +20,7 @@ func is_chains_on_ground():
 func _on_Timer_timeout():
 	if current_number_of_chains < total_number_of_chains:
 		# Create a chain
-		var chain = chain_prefab.instance()
+		var chain = chain_prefab.instantiate()
 		# Set chain variables
 		chain.chain_origin = global_position
 		chain.chain_target_path = chain_target_path

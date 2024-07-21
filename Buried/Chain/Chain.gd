@@ -1,11 +1,11 @@
 extends Line2D
 
-export var chain_speed = 500
-export var chain_parry_time = 1.0
-export var chain_parry_start_size = 600
-export var chain_parry_end_size = 200
+@export var chain_speed = 500
+@export var chain_parry_time = 1.0
+@export var chain_parry_start_size = 600
+@export var chain_parry_end_size = 200
 var chain_origin : Vector2 = Vector2(0,0)
-export var chain_target_path : NodePath
+@export var chain_target_path : NodePath
 var chain_end_pos : Vector2
 enum ChainMode { Ejecting, Returning, Parrying }
 var chain_mode : int = ChainMode.Ejecting
@@ -54,7 +54,7 @@ func get_end_position(chain_target_position : Vector2):
 	
 	# Initializing Ray
 	$RayCast2D.position = chain_origin
-	$RayCast2D.cast_to = dir
+	$RayCast2D.target_position = dir
 	
 	# Forcing the ray to update
 	$RayCast2D.force_update_transform()
@@ -94,4 +94,4 @@ func set_points_parry(chain_end, chain_start, t):
 	# Set chain end position.
 	$ChainEnd.position = new_pts[0]
 	# Set points to new points.
-	points = PoolVector2Array(new_pts)
+	points = PackedVector2Array(new_pts)
