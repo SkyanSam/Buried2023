@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://dpg6ocjmy1mr4"]
+[gd_scene load_steps=37 format=3 uid="uid://dpg6ocjmy1mr4"]
 
 [ext_resource type="Texture2D" uid="uid://ym7tl2fg7tar" path="res://Assets/player/jump/jump0023.png" id="1"]
 [ext_resource type="Script" path="res://Scripts/Player/Player.gd" id="1_ycdbj"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://bsf768py0efxj" path="res://Assets/player/jump/jump0001.png" id="23"]
 [ext_resource type="Texture2D" uid="uid://d3n0go7vvo6ec" path="res://Assets/player/jump/jump0003.png" id="24"]
 [ext_resource type="Texture2D" uid="uid://dyjus1m27hc1u" path="res://Assets/player/jump/jump0005.png" id="25"]
+[ext_resource type="Script" path="res://Scripts/States/StateMachine.gd" id="26_ktfmd"]
 
 [sub_resource type="RectangleShape2D" id="2"]
 size = Vector2(87, 448.626)
@@ -259,3 +260,6 @@ anim_player = NodePath("../AnimatedSprite2D/AnimationPlayer")
 parameters/Transition/current_state = "idle"
 parameters/Transition/transition_request = ""
 parameters/Transition/current_index = 0
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("26_ktfmd")
