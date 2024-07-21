@@ -5,5 +5,3 @@ res://Player.tscn
 res://DepressionBoss/DepressionBoss DONT USE.tscn
 res://Scripts/DepCam.gd
 res://Scripts/dep_boss/DepressionBoss.gd
-res://Scripts/States/State.gd
-res://Scripts/States/StateMachine.gd
