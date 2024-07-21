@@ -1,4 +1,5 @@
 res://default_env.tres
 res://CharacterNode.tscn
-res://Player.gd
-res://Enemy.gd
+res://Player.tscn
+res://DepressionBoss/DepressionBossScene.tscn
+res://DepressionBoss/DepressionBoss DONT USE.tscn

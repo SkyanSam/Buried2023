@@ -1,68 +1,73 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720971991
-AnimatedSprite.gd::GDScript::-1::1720971963::0::1::::<>AnimatedSprite2D<>::
-CharacterNode.tscn::PackedScene::-1::1720971963::0::1::::<><>::res://Assets/depression/background 1.png<>res://Assets/depression/background 2.png<>res://Assets/depression/stalactite/rock2.png<>res://Assets/depression/ground (goes behind actual gound).png<>res://Assets/depression/actual ground hitbox (invis later).png<>res://Player.tscn<>res://Assets/depression/depression.png<>res://Assets/depression/dep foreground.png<>res://Assets/depression/stalactite/rock1.png<>res://Assets/depression/stalactite/rock6.png<>res://Assets/depression/stalactite/rock3.png<>res://Assets/depression/stalactite/rock8.png<>res://Assets/depression/stalactite/rock10.png<>res://Assets/depression/stalactite/rock7.png<>res://Assets/depression/stalactite/rock9.png<>res://Assets/depression/stalactite/rock5.png<>res://Assets/depression/stalactite/rock4.png
-default_env.tres::Environment::-1::1720971963::0::1::::<><>::
-DepCam.gd::GDScript::-1::1720971963::0::1::::<>Camera2D<>::
-DepressionBossScene.tscn::PackedScene::-1::1720971963::0::1::::<><>::res://Assets/depression/dep foreground.png<>res://Assets/depression/player.png<>res://Assets/depression/ground (goes behind actual gound).png<>res://Assets/depression/background 1.png<>res://Assets/depression/actual ground hitbox (invis later).png<>res://Assets/depression/background 2.png<>res://Assets/depression/depression.png<>res://DepressionBoss/DepressionBoss.tscn<>res://Player.tscn
-Enemy.gd::GDScript::-1::1720971963::0::1::::<>CharacterBody2D<>::
-floating island.png::CompressedTexture2D::5283669728987514553::1700608130::1720971963::1::::<><>::
-game.tscn::PackedScene::-1::1720971963::0::1::::<><>::res://floating island.png<>res://icon.png<>res://Player.tscn<>res://Enemy.gd<>res://Chain/Chain.tscn<>res://DepressionBoss/DepressionBoss.tscn
-icon.png::CompressedTexture2D::7488960060165631964::1700608130::1720971963::1::::<><>::
-Player.gd::GDScript::-1::1720971963::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::-1::1720971963::0::1::::<><>::res://Assets/player/jump/jump0023.png<>res://Player.gd<>res://Assets/player/jump/jump0033.png<>res://Assets/player/jump/jump0030.png<>res://Assets/player/jump/jump0037.png<>res://Assets/player/jump/jump0039.png<>res://Assets/player/jump/jump0027.png<>res://Assets/player/jump/jump0035.png<>res://Assets/player/jump/jump0017.png<>res://Assets/player/jump/jump0029.png<>res://Assets/player/jump/jump0034.png<>res://Assets/player/jump/jump0038.png<>res://Assets/player/jump/jump0013.png<>res://Assets/player/jump/jump0015.png<>res://Assets/player/jump/jump0019.png<>res://Assets/player/jump/jump0021.png<>res://Assets/player/jump/jump0025.png<>res://Assets/player/jump/jump0031.png<>res://Assets/player/jump/jump0007.png<>res://Assets/player/jump/jump0009.png<>res://Assets/player/jump/jump0011.png<>res://Assets/player/jump/jump0002.png<>res://Assets/player/jump/jump0001.png<>res://Assets/player/jump/jump0003.png<>res://Assets/player/jump/jump0005.png
-SmolEnemy.gd::GDScript::-1::1700608130::0::1::::<>RefCounted<>::
+::res://::1721584556
+CharacterNode.tscn::PackedScene::6766293680259973169::1721583997::0::1::::<><>::uid://b15lvh0bc48ih::::res://Assets/depression/background 1.png<>uid://oy40w73mm4ei::::res://Assets/depression/background 2.png<>uid://03b5rd3icpct::::res://Assets/depression/stalactite/rock2.png<>uid://cf1wceqjsshd6::::res://Assets/depression/ground (goes behind actual gound).png<>uid://dyroupx5scc17::::res://Assets/depression/actual ground hitbox (invis later).png<>uid://dpg6ocjmy1mr4::::res://Player.tscn<>uid://ctxwq2brxf1ag::::res://Assets/depression/depression.png<>uid://dmodkdn4mqsj::::res://Assets/depression/dep foreground.png<>uid://ied6ijia2uht::::res://Assets/depression/stalactite/rock1.png<>uid://cv1vhfo2afepn::::res://Assets/depression/stalactite/rock6.png<>uid://cyb2ko25cv33g::::res://Assets/depression/stalactite/rock3.png<>uid://dbf7g4aqlae0l::::res://Assets/depression/stalactite/rock8.png<>uid://c5xs45j1246e8::::res://Assets/depression/stalactite/rock10.png<>uid://beif48pky7hc::::res://Assets/depression/stalactite/rock7.png<>uid://dwo3ujcduu3la::::res://Assets/depression/stalactite/rock9.png<>uid://cdt1kwbufvhw6::::res://Assets/depression/stalactite/rock5.png<>uid://cw4wo33hgtbwv::::res://Assets/depression/stalactite/rock4.png
+default_env.tres::Environment::7340577346833837534::1721584313::0::1::::<><>::
+floating island.png::CompressedTexture2D::5283669728987514553::1700608130::1721578253::1::::<><>::
+game.tscn::PackedScene::-1::1721583997::0::1::::<><>::uid://chjpjemo8q0lp::::res://floating island.png<>uid://dexycwhj5hbgu::::res://icon.png<>uid://dpg6ocjmy1mr4::::res://Player.tscn<>res://Scripts/Enemy.gd<>res://Scripts/Chain/Chain.tscn<>uid://cpm2yevem588j::::res://DepressionBoss/DepressionBoss DONT USE.tscn
+icon.png::CompressedTexture2D::7488960060165631964::1700608130::1721578253::1::::<><>::
+Player.tscn::PackedScene::8226388319592850079::1721584464::0::1::::<><>::uid://ym7tl2fg7tar::::res://Assets/player/jump/jump0023.png<>res://Scripts/Player/Player.gd<>uid://cvg3h0tsyief::::res://Assets/player/jump/jump0033.png<>uid://dmne2cw35li8j::::res://Assets/player/jump/jump0030.png<>uid://015p65wnpprp::::res://Assets/player/jump/jump0037.png<>uid://bwx36vda877lj::::res://Assets/player/jump/jump0039.png<>uid://djhgjlmgvjgsf::::res://Assets/player/jump/jump0027.png<>uid://dra11pjkoagfa::::res://Assets/player/jump/jump0035.png<>uid://b2f0ns0sdkh4::::res://Assets/player/jump/jump0017.png<>uid://dphvnj2036kh0::::res://Assets/player/jump/jump0029.png<>uid://chctr7k0p3j7n::::res://Assets/player/jump/jump0034.png<>uid://bctrjw8rt2me::::res://Assets/player/jump/jump0038.png<>uid://nkxxm8d2oia7::::res://Assets/player/jump/jump0013.png<>uid://1rhng607mdoa::::res://Assets/player/jump/jump0015.png<>uid://bypjgynbyvxed::::res://Assets/player/jump/jump0019.png<>uid://dbgnbypfhjqdv::::res://Assets/player/jump/jump0021.png<>uid://by284dqxjx4yj::::res://Assets/player/jump/jump0025.png<>uid://bkw4oxgi6ydkg::::res://Assets/player/jump/jump0031.png<>uid://bb7a3whodnxvw::::res://Assets/player/jump/jump0007.png<>uid://cidp34mx0ly77::::res://Assets/player/jump/jump0009.png<>uid://dkhq1dhis2gsr::::res://Assets/player/jump/jump0011.png<>uid://e4kllgwxoimk::::res://Assets/player/jump/jump0002.png<>uid://bsf768py0efxj::::res://Assets/player/jump/jump0001.png<>uid://d3n0go7vvo6ec::::res://Assets/player/jump/jump0003.png<>uid://dyjus1m27hc1u::::res://Assets/player/jump/jump0005.png
 ::res://Assets/::1720969546
-::res://Assets/depression/::1720971963
-actual ground hitbox (invis later).png::CompressedTexture2D::8879775298755877324::1700608130::1720971963::1::::<><>::
-background 1.png::CompressedTexture2D::4273967745829017987::1700608130::1720971963::1::::<><>::
-background 2.png::CompressedTexture2D::1033995520903915556::1700608130::1720971963::1::::<><>::
-dep foreground.png::CompressedTexture2D::236194989741079357::1720967020::1720971963::1::::<><>::
-depression.png::CompressedTexture2D::6155275851874155622::1700608130::1720971963::1::::<><>::
-ground (goes behind actual gound).png::CompressedTexture2D::5178798987854550001::1700608130::1720971963::1::::<><>::
-player - Copy.png::CompressedTexture2D::599358709387107408::1700608130::1720971963::1::::<><>::
-player.png::CompressedTexture2D::3388772996429068071::1700608130::1720971963::1::::<><>::
-::res://Assets/depression/stalactite/::1720971963
-rock1.png::CompressedTexture2D::570006205164458217::1720967020::1720971963::1::::<><>::
-rock2.png::CompressedTexture2D::1812638857688740963::1720967020::1720971963::1::::<><>::
-rock3.png::CompressedTexture2D::6461095987599997942::1720967020::1720971963::1::::<><>::
-rock4.png::CompressedTexture2D::6378225171481321181::1720967020::1720971963::1::::<><>::
-rock5.png::CompressedTexture2D::5024228733353144031::1720967020::1720971963::1::::<><>::
-rock6.png::CompressedTexture2D::6301768748266837027::1720967020::1720971963::1::::<><>::
-rock7.png::CompressedTexture2D::78942594417502832::1720967020::1720971963::1::::<><>::
-rock8.png::CompressedTexture2D::7241727965938416797::1720967020::1720971963::1::::<><>::
-rock9.png::CompressedTexture2D::8734054167312023334::1720967020::1720971963::1::::<><>::
-rock10.png::CompressedTexture2D::6927133649585908797::1720967020::1720971963::1::::<><>::
+::res://Assets/depression/::1721578253
+actual ground hitbox (invis later).png::CompressedTexture2D::8879775298755877324::1700608130::1721578253::1::::<><>::
+background 1.png::CompressedTexture2D::4273967745829017987::1700608130::1721578253::1::::<><>::
+background 2.png::CompressedTexture2D::1033995520903915556::1700608130::1721578253::1::::<><>::
+dep foreground.png::CompressedTexture2D::236194989741079357::1720967020::1721578253::1::::<><>::
+depression.png::CompressedTexture2D::6155275851874155622::1700608130::1721578253::1::::<><>::
+ground (goes behind actual gound).png::CompressedTexture2D::5178798987854550001::1700608130::1721578253::1::::<><>::
+player - Copy.png::CompressedTexture2D::599358709387107408::1700608130::1721578253::1::::<><>::
+player.png::CompressedTexture2D::3388772996429068071::1700608130::1721578253::1::::<><>::
+::res://Assets/depression/stalactite/::1721578253
+rock1.png::CompressedTexture2D::570006205164458217::1720967020::1721578253::1::::<><>::
+rock2.png::CompressedTexture2D::1812638857688740963::1720967020::1721578253::1::::<><>::
+rock3.png::CompressedTexture2D::6461095987599997942::1720967020::1721578253::1::::<><>::
+rock4.png::CompressedTexture2D::6378225171481321181::1720967020::1721578253::1::::<><>::
+rock5.png::CompressedTexture2D::5024228733353144031::1720967020::1721578253::1::::<><>::
+rock6.png::CompressedTexture2D::6301768748266837027::1720967020::1721578253::1::::<><>::
+rock7.png::CompressedTexture2D::78942594417502832::1720967020::1721578253::1::::<><>::
+rock8.png::CompressedTexture2D::7241727965938416797::1720967020::1721578253::1::::<><>::
+rock9.png::CompressedTexture2D::8734054167312023334::1720967020::1721578253::1::::<><>::
+rock10.png::CompressedTexture2D::6927133649585908797::1720967020::1721578253::1::::<><>::
 ::res://Assets/player/::1720969546
-::res://Assets/player/jump/::1720971963
-jump0001.png::CompressedTexture2D::3662141818894204827::1720969546::1720971963::1::::<><>::
-jump0002.png::CompressedTexture2D::341249731137034594::1720969546::1720971963::1::::<><>::
-jump0003.png::CompressedTexture2D::9152916009073014502::1720969546::1720971963::1::::<><>::
-jump0005.png::CompressedTexture2D::8863621567738790056::1720969546::1720971963::1::::<><>::
-jump0007.png::CompressedTexture2D::2522720784658360660::1720969546::1720971963::1::::<><>::
-jump0009.png::CompressedTexture2D::5341507549667166088::1720969546::1720971963::1::::<><>::
-jump0011.png::CompressedTexture2D::7876619203036123717::1720969546::1720971963::1::::<><>::
-jump0013.png::CompressedTexture2D::934536990360154368::1720969546::1720971963::1::::<><>::
-jump0015.png::CompressedTexture2D::1860452954886148776::1720969546::1720971963::1::::<><>::
-jump0017.png::CompressedTexture2D::126275984579201803::1720969546::1720971963::1::::<><>::
-jump0019.png::CompressedTexture2D::4102477045736322927::1720969546::1720971963::1::::<><>::
-jump0021.png::CompressedTexture2D::7242629551910936659::1720969546::1720971963::1::::<><>::
-jump0023.png::CompressedTexture2D::1711282273917260061::1720969546::1720971963::1::::<><>::
-jump0025.png::CompressedTexture2D::4128746762494928725::1720969546::1720971963::1::::<><>::
-jump0027.png::CompressedTexture2D::7805793258797297369::1720969546::1720971963::1::::<><>::
-jump0029.png::CompressedTexture2D::8227844137691470535::1720969546::1720971963::1::::<><>::
-jump0030.png::CompressedTexture2D::8028656310290089027::1720969546::1720971963::1::::<><>::
-jump0031.png::CompressedTexture2D::3135512442279372694::1720969546::1720971963::1::::<><>::
-jump0033.png::CompressedTexture2D::184144331469097133::1720969546::1720971963::1::::<><>::
-jump0034.png::CompressedTexture2D::5269477707071785825::1720969546::1720971963::1::::<><>::
-jump0035.png::CompressedTexture2D::8354098267605871010::1720969546::1720971963::1::::<><>::
-jump0037.png::CompressedTexture2D::1810244884833477269::1720969546::1720971963::1::::<><>::
-jump0038.png::CompressedTexture2D::75502088723811536::1720969546::1720971963::1::::<><>::
-jump0039.png::CompressedTexture2D::3979812475151861583::1720969546::1720971963::1::::<><>::
-::res://Chain/::1720971963
-Chain.gd::GDScript::-1::1720971963::0::1::::<>Line2D<>::
-chain.png::CompressedTexture2D::688864500515204623::1700608130::1720971963::1::::<><>::
-Chain.tscn::PackedScene::-1::1720971963::0::1::::<><>::res://Chain/chain.png<>res://Chain/Chain.gd<>res://icon.png
-::res://DepressionBoss/::1720971963
-DepressionBoss.gd::GDScript::-1::1720971963::0::1::::<>Node2D<>::
-DepressionBoss.tscn::PackedScene::-1::1720971963::0::1::::<><>::res://Assets/depression/depression.png<>res://DepressionBoss/DepressionBoss.gd<>res://Chain/Chain.tscn
+::res://Assets/player/jump/::1721578253
+jump0001.png::CompressedTexture2D::3662141818894204827::1720969546::1721578253::1::::<><>::
+jump0002.png::CompressedTexture2D::341249731137034594::1720969546::1721578253::1::::<><>::
+jump0003.png::CompressedTexture2D::9152916009073014502::1720969546::1721578253::1::::<><>::
+jump0005.png::CompressedTexture2D::8863621567738790056::1720969546::1721578253::1::::<><>::
+jump0007.png::CompressedTexture2D::2522720784658360660::1720969546::1721578253::1::::<><>::
+jump0009.png::CompressedTexture2D::5341507549667166088::1720969546::1721578253::1::::<><>::
+jump0011.png::CompressedTexture2D::7876619203036123717::1720969546::1721578253::1::::<><>::
+jump0013.png::CompressedTexture2D::934536990360154368::1720969546::1721578253::1::::<><>::
+jump0015.png::CompressedTexture2D::1860452954886148776::1720969546::1721578253::1::::<><>::
+jump0017.png::CompressedTexture2D::126275984579201803::1720969546::1721578253::1::::<><>::
+jump0019.png::CompressedTexture2D::4102477045736322927::1720969546::1721578253::1::::<><>::
+jump0021.png::CompressedTexture2D::7242629551910936659::1720969546::1721578253::1::::<><>::
+jump0023.png::CompressedTexture2D::1711282273917260061::1720969546::1721578253::1::::<><>::
+jump0025.png::CompressedTexture2D::4128746762494928725::1720969546::1721578253::1::::<><>::
+jump0027.png::CompressedTexture2D::7805793258797297369::1720969546::1721578253::1::::<><>::
+jump0029.png::CompressedTexture2D::8227844137691470535::1720969546::1721578253::1::::<><>::
+jump0030.png::CompressedTexture2D::8028656310290089027::1720969546::1721578253::1::::<><>::
+jump0031.png::CompressedTexture2D::3135512442279372694::1720969546::1721578253::1::::<><>::
+jump0033.png::CompressedTexture2D::184144331469097133::1720969546::1721578253::1::::<><>::
+jump0034.png::CompressedTexture2D::5269477707071785825::1720969546::1721578253::1::::<><>::
+jump0035.png::CompressedTexture2D::8354098267605871010::1720969546::1721578253::1::::<><>::
+jump0037.png::CompressedTexture2D::1810244884833477269::1720969546::1721578253::1::::<><>::
+jump0038.png::CompressedTexture2D::75502088723811536::1720969546::1721578253::1::::<><>::
+jump0039.png::CompressedTexture2D::3979812475151861583::1720969546::1721578253::1::::<><>::
+::res://DepressionBoss/::1721583997
+DepressionBoss DONT USE.tscn::PackedScene::5852129015597106655::1721583997::0::1::::<><>::uid://ctxwq2brxf1ag::::res://Assets/depression/depression.png<>res://Scripts/dep_boss/DepressionBoss.gd<>res://Scripts/Chain/Chain.tscn
+DepressionBossScene.tscn::PackedScene::4151793649822400416::1721583997::0::1::::<><>::uid://oy40w73mm4ei::::res://Assets/depression/background 2.png<>uid://b15lvh0bc48ih::::res://Assets/depression/background 1.png<>uid://cf1wceqjsshd6::::res://Assets/depression/ground (goes behind actual gound).png<>uid://cpm2yevem588j::::res://DepressionBoss/DepressionBoss DONT USE.tscn<>uid://dyroupx5scc17::::res://Assets/depression/actual ground hitbox (invis later).png<>uid://bojsuje5mpu4f::::res://Assets/depression/player.png<>uid://dpg6ocjmy1mr4::::res://Player.tscn<>uid://dmodkdn4mqsj::::res://Assets/depression/dep foreground.png
+::res://Scripts/::1721583997
+AnimatedSprite.gd::GDScript::-1::1721583997::0::1::::<>AnimatedSprite2D<>::
+DepCam.gd::GDScript::-1::1721583997::0::1::::<>Camera2D<>::
+Enemy.gd::GDScript::-1::1721583997::0::1::::<>CharacterBody2D<>::
+SmolEnemy.gd::GDScript::-1::1721583997::0::1::::<>RefCounted<>::
+::res://Scripts/Chain/::1721583997
+Chain.gd::GDScript::-1::1721583997::0::1::::<>Line2D<>::
+chain.png::CompressedTexture2D::688864500515204623::1721583997::1721583997::1::::<><>::
+Chain.tscn::PackedScene::-1::1721583997::0::1::::<><>::uid://j2xq6k1r66rj::::res://Scripts/Chain/chain.png<>res://Scripts/Chain/Chain.gd<>uid://dexycwhj5hbgu::::res://icon.png
+::res://Scripts/dep_boss/::1721583997
+DepressionBoss.gd::GDScript::-1::1721583997::0::1::::<>Node2D<>::
+::res://Scripts/Player/::1721584464
+Player.gd::GDScript::-1::1721583997::0::1::::<>CharacterBody2D<>::
+::res://Scripts/States/::1721584464
+State.gd::GDScript::-1::1721584464::0::1::::State<>Node<>::

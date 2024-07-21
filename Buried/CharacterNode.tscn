@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://03b5rd3icpct" path="res://Assets/depression/stalactite/rock2.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://cf1wceqjsshd6" path="res://Assets/depression/ground (goes behind actual gound).png" id="4"]
 [ext_resource type="Texture2D" uid="uid://dyroupx5scc17" path="res://Assets/depression/actual ground hitbox (invis later).png" id="5"]
-[ext_resource type="PackedScene" path="res://Player.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://dpg6ocjmy1mr4" path="res://Player.tscn" id="6"]
 [ext_resource type="Texture2D" uid="uid://ctxwq2brxf1ag" path="res://Assets/depression/depression.png" id="8"]
 [ext_resource type="Texture2D" uid="uid://dmodkdn4mqsj" path="res://Assets/depression/dep foreground.png" id="9"]
 [ext_resource type="Texture2D" uid="uid://ied6ijia2uht" path="res://Assets/depression/stalactite/rock1.png" id="10"]
