@@ -59,3 +59,4 @@ shape = SubResource("1")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(1920, 1080)
+zoom = Vector2(0.48, 0.48)
